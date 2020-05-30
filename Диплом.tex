@@ -1,0 +1,50 @@
+% Этот шаблон документа разработан в 2014 году
+% Данилом Фёдоровых (danil@fedorovykh.ru) 
+% для использования в курсе 
+% <<Документы и презентации в \LaTeX>>, записанном НИУ ВШЭ
+% для Coursera.org: http://coursera.org/course/latex .
+% Исходная версия шаблона --- 
+% https://www.writelatex.com/coursera/latex/5.3
+
+\documentclass[a4paper,14pt]{article}
+
+\input{preamble}
+
+\author{Бычков Андрей}
+\title{Квадратизация дифференциальных уравнений}
+\date{\today}
+
+%\includeonly{chapters/intro, chapters/ch1}
+
+\begin{document} 
+
+%\maketitle
+
+\tableofcontents
+
+\include{chapters/Введение}
+\include{chapters/Цели_и_задачи}
+\include{chapters/Определения_и_понятия}
+\include{chapters/Методы}
+\include{chapters/Эксперименты}
+\include{chapters/Заключение}
+
+\begin{thebibliography}{9}
+\bibitem{Gu-PhD} Gu C. Model order reduction of nonlinear dynamical systems : дис. – UC Berkeley, 2011.
+\bibitem{Kramer-Willcox} Kramer B., Willcox K. E. Nonlinear model order reduction via lifting transformations and proper orthogonal decomposition //AIAA Journal. – 2019. – Т. 57. – №. 6. – С. 2297-2307.
+\bibitem{Harrington-vanGorder} Harrington H. A., Van Gorder R. A. Reduction of dimension for nonlinear dynamical systems //Nonlinear Dynamics. – 2017. – Т. 88. – №. 1. – С. 715-734.
+\bibitem{ID-DFS} Korf R. E. Depth-first iterative-deepening: An optimal admissible tree search //Artificial intelligence. – 1985. – Т. 27. – №. 1. – С. 97-109.
+\bibitem{physics-example} Blackmore D. L. et al. Nonlinear dynamical systems of mathematical physics: spectral and symplectic integrability analysis. – World Scientific, 2011.
+\bibitem{chemistry-example} Karri R. R. Evaluating and estimating the complex dynamic phenomena in nonlinear chemical systems //International Journal of Chemical Reactor Engineering. – 2011. – Т. 9. – №. 1.
+\bibitem{biology-example} Jackson T., Radunskaya A. (ed.). Applications of Dynamical Systems in Biology and Medicine. – Springer, 2015. – Т. 158.
+\bibitem{economics-example} Lines M. (ed.). Nonlinear dynamical systems in economics. - Springer Science \& Business Media, 2007. - Т. 476.
+\bibitem{MOR-book} Schilders W. H. A., Van der Vorst H. A., Rommes J. Model order reduction: theory, research aspects and applications. – Berlin : Springer, 2008. – Т. 13.
+\bibitem{Strogatz-book} Strogatz S. H. Nonlinear dynamics and chaos with student solutions manual: With applications to physics, biology, chemistry, and engineering. – CRC press, 2018.
+\bibitem{Scott-reachability} Shen K., Scott J. K. Rapid and accurate reachability analysis for nonlinear dynamic systems by exploiting model redundancy //Computers \& Chemical Engineering. – 2017. – Т. 106. – С. 596-608.
+\bibitem{MOR-linear-overview} Antoulas A. C., Sorensen D. C. Approximation of large-scale dynamical systems: An overview. – 2001.
+\bibitem{SymPy} https://www.sympy.org/ru/index.html
+
+\end{thebibliography}
+
+
+\end{document} 
