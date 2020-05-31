@@ -1,0 +1,54 @@
+% !TEX root = ../Диплом.tex
+
+\section{Определения и понятия} \label{sec:definitions}
+
+\subsection{Элементарные нелинейные функции}
+
+\begin{definition}
+    Будем понимать под функциями $f_i(\vec x)$ \textit{элементарные нелинейные функции}, которые могут быть записаны как линейные комбинации элементарных функций $g_k(\vec x)$. 
+    \begin{equation}
+        f_i(\vec x) = p_i^T \vec x + a_{i,1} g_1(\vec x) + \cdots + a_{i,m} g_m(\vec x), p_i \in \mathbb{R}^n, a_j \in \mathbb{R}
+    \end{equation}
+\end{definition}
+
+Такими функция мы можем покрыть широкий класс проблем, встречающихся на практике. Мы требуем элементарность функций, так как производная элементарной функции может быть найдена за конечное число шагов, что будет критично для нас в дальнейшем.
+
+\subsection{Системы элементарных ОДУ}
+
+В данной работе мы рассматриваем системы нелинейных ОДУ следующего вида:
+
+\begin{enumerate}
+    \item \textbf{Система элементарных ОДУ в нормальной форме}
+    \begin{equation} \label{eq:ODE-norm-system}
+        \begin{array}{cc}
+             \dot{x_i} = f_i(\vec x),\quad i = 1 \cdots N
+        \end{array}
+    \end{equation}
+    В теории управления данная форма описывает уравнения состояния для автономных систем.
+    
+    \item \textbf{Система элементарных уравнений и элементарных ОДУ в нормальной форме}
+    \begin{equation} \label{eq:ADE-system}
+        \begin{array}{lcl}
+             \dot{x_i} = f_i(\vec x), \quad i = 1 \cdots n  \\
+             f_j(\vec x) = 0, \quad j = 1 \cdots m
+        \end{array},
+    \end{equation}
+\end{enumerate} 
+
+Как легко заметить, система \eqref{eq:ODE-norm-system} является частным случаем системы \eqref{eq:ADE-system}.
+
+
+
+\begin{definition}
+    Рассмотрим частный случай систем \eqref{eq:ODE-norm-system} и \eqref{eq:ADE-system}, где функции $f_i$ представляют собой полиномы. Такие системы мы будем называть \textit{полиномиальными}.
+\end{definition}
+
+\begin{definition}
+    Полиномиальная система имеет порядок $M$, если $M$ - наивысшая степень мономов, образованных переменными $x_i$.
+\end{definition}
+
+\begin{definition}
+    Полиномиальные системы порядка 2 назовём \textit{квадратичными}.
+\end{definition}
+
+
